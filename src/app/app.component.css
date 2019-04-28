@@ -116,8 +116,3 @@
     width: 2em;
     height: 2em;
 }
-
-.menu-section:hover {
-    color: brown;
-    text-decoration: underline brown;
-}

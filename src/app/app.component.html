@@ -34,10 +34,18 @@
 <nav>
   <ol class="menu">
     <li>
-      <div class="menu-section">
+      <button mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" (mouseenter)="menuTrigger.openMenu()" (mouseleave)="menuTrigger.closeMenu()">
         <h4>PS4</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menu="matMenu" [overlapTrigger]="false" direction="down" yPosition="below">
+        <span (mouseleave)="menuTrigger.closeMenu()"></span>
+        <div class="accessories" mat-menu-item>
+          <h5>Akcesoria Ps4</h5>
+        </div>
+        <div class="games" mat-menu-item>
+          <h5>Gry na Ps4</h5>
+        </div>
+      </mat-menu>
     </li>
     <li>
       <div class="menu-section">
@@ -83,5 +91,40 @@
     </li>
   </ol>
 </nav>
+
+<button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)"
+  (mouseleave)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
+  <span>Ps4
+  </span>
+</button>
+
+<mat-menu #levelOne="matMenu" direction="down" yPosition="below">
+  <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTrigger, button)">
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+    <div>
+      <span>Akcesoria</span>
+    </div>
+  </span>
+</mat-menu>
 
 <router-outlet></router-outlet>

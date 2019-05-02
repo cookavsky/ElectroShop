@@ -34,97 +34,125 @@
 <nav>
   <ol class="menu">
     <li>
-      <button mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" (mouseenter)="menuTrigger.openMenu()" (mouseleave)="menuTrigger.closeMenu()">
+      <button #button mat-button [matMenuTriggerFor]="menuPs4" #menuPs4Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPs4Trigger)" (mouseleave)="buttonLeave(menuPs4Trigger, button)" style="z-index:1050">
         <h4>PS4</h4>
       </button>
-      <mat-menu #menu="matMenu" [overlapTrigger]="false" direction="down" yPosition="below">
-        <span (mouseleave)="menuTrigger.closeMenu()"></span>
-        <div class="accessories" mat-menu-item>
-          <h5>Akcesoria Ps4</h5>
-        </div>
-        <div class="games" mat-menu-item>
-          <h5>Gry na Ps4</h5>
-        </div>
+      <mat-menu #menuPs4="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPs4Trigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria Ps4</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na Ps4</h5>
+          </div>
+        </span>
       </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuXONE" #menuXONETrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuXONETrigger)" (mouseleave)="buttonLeave(menuXONETrigger, button)" style="z-index:1050">
         <h4>XONE</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuXONE="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuXONETrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria XONE</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na XONE</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuPC" #menuPCTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPCTrigger)" (mouseleave)="buttonLeave(menuPCTrigger, button)" style="z-index:1050">
         <h4>PC</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuPC="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPCTrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria PC</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na PC</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuSWITCH" #menuSWITCHTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuSWITCHTrigger)" (mouseleave)="buttonLeave(menuSWITCHTrigger, button)" style="z-index:1050">
         <h4>SWITCH</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuSWITCH="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuSWITCHTrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria SWITCH</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na SWITCH</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menu3DS" #menu3DSTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menu3DSTrigger)" (mouseleave)="buttonLeave(menu3DSTrigger, button)" style="z-index:1050">
         <h4>3DS</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menu3DS="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menu3DSTrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria 3DS</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na 3DS</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuPS3" #menuPS3Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPS3Trigger)" (mouseleave)="buttonLeave(menuPS3Trigger, button)" style="z-index:1050">
         <h4>PS3/X360</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuPS3="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPS3Trigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria PS3/X360</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na PS3/X360</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuWII" #menuWIITrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuWIITrigger)" (mouseleave)="buttonLeave(menuWIITrigger, button)" style="z-index:1050">
         <h4>WIIU/WII/DS</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuWII="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuWIITrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>Akcesoria WIIU/WII/DS</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>Gry na WIIU/WII/DS</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
     <li>
-      <div class="menu-section">
+      <button #button mat-button [matMenuTriggerFor]="menuUsed" #menuUsedTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuUsedTrigger)" (mouseleave)="buttonLeave(menuUsedTrigger, button)" style="z-index:1050">
         <h4>UŻYWANE</h4>
-        <img class="menu-button-img" src="../assets/img/angle-down-solid.svg">
-      </div>
+      </button>
+      <mat-menu #menuUsed="matMenu" direction="down" yPosition="below">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuUsedTrigger, button)">
+          <div class="accessories" mat-menu-item>
+            <h5>UŻYWANE Akcesoria</h5>
+          </div>
+          <div class="games" mat-menu-item>
+            <h5>UŻYWANE Gry</h5>
+          </div>
+        </span>
+      </mat-menu>
     </li>
   </ol>
 </nav>
-
-<button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)"
-  (mouseleave)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
-  <span>Ps4
-  </span>
-</button>
-
-<mat-menu #levelOne="matMenu" direction="down" yPosition="below">
-  <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTrigger, button)">
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-    <div>
-      <span>Akcesoria</span>
-    </div>
-  </span>
-</mat-menu>
-
 <router-outlet></router-outlet>

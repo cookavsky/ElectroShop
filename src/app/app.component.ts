@@ -15,7 +15,7 @@ export class AppComponent {
   isMatMenu2Open = false;
   prevButtonTrigger;
 
-  buttonEnter(trigger) {
+  buttonFocus(trigger) {
     setTimeout(() => {
       if (this.prevButtonTrigger && this.prevButtonTrigger != trigger) {
         this.prevButtonTrigger.closeMenu();

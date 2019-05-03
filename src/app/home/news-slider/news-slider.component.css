@@ -1,0 +1,13 @@
+.container {
+  height: 25em;
+  width: 100%;
+  border-radius: 2em;
+  border: 2px solid gray;
+  box-shadow: 1px 5px 5px black;
+}
+
+.container-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2em;
+}

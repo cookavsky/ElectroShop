@@ -1,0 +1,21 @@
+{
+    "NewsArray": [
+        {
+            "img": "../../../assets/img/News1.jpg",
+            "alt": "News1",
+            "text": ""
+        }, {
+            "img": "../../../assets/img/News2.jpg",
+            "alt": "News2",
+            "text": ""
+        }, {
+            "img": "../../../assets/img/News3.jpg",
+            "alt": "News3",
+            "text": ""
+        }, {
+            "img": "../../../assets/img/News4.jpg",
+            "alt": "News4",
+            "text": ""
+        }
+    ]
+}

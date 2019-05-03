@@ -116,3 +116,84 @@
     width: 2em;
     height: 2em;
 }
+
+.Btn {
+    z-index: 1050;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 5em;
+    box-shadow: 0px 1px 5px black;
+}
+
+.footer-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-info-subscribe, .footer-info-social, .footer-main {
+    margin: 1em;
+}
+
+.footer-info-subscribe-input {
+    border: 1px solid gray;
+    border-radius: 2em;
+    padding: 1em 3em;
+    margin: 1em 0;
+}
+
+.footer-info-subscribe-btn {
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    width: 4em;
+    padding: 1em 0;
+    border-radius: 2em;
+    transform: translateX(-3em);
+}
+
+.footer-info-social-icon {
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1em;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.footer-contact-component, .footer-info-social-icons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 1em;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact-component-img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 1em;
+}
+
+.footer-main-text {
+    cursor: pointer;
+    margin: 0.25em 0;
+}
+
+.footer-main-text:hover {
+    text-decoration: underline black;
+}

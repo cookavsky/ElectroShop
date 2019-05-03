@@ -34,125 +34,248 @@
 <nav>
   <ol class="menu">
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuPs4" #menuPs4Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPs4Trigger)" (mouseleave)="buttonLeave(menuPs4Trigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuPs4" #menuPs4Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPs4Trigger)">
         <h4>PS4</h4>
       </button>
       <mat-menu #menuPs4="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPs4Trigger, button)">
-          <div class="accessories" mat-menu-item>
+        <div class="AA" (mouseleave)="menuPs4Trigger.closeMenu()">
+          <div class="accessories BB" mat-menu-item>
             <h5>Akcesoria Ps4</h5>
           </div>
-          <div class="games" mat-menu-item>
+          <div class="games BB" mat-menu-item>
             <h5>Gry na Ps4</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuXONE" #menuXONETrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuXONETrigger)" (mouseleave)="buttonLeave(menuXONETrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuXONE" #menuXONETrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuXONETrigger)">
         <h4>XONE</h4>
       </button>
       <mat-menu #menuXONE="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuXONETrigger, button)">
+        <div (mouseleave)="menuXONETrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria XONE</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na XONE</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuPC" #menuPCTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPCTrigger)" (mouseleave)="buttonLeave(menuPCTrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuPC" #menuPCTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPCTrigger)">
         <h4>PC</h4>
       </button>
       <mat-menu #menuPC="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPCTrigger, button)">
+        <div (mouseleave)="menuPCTrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria PC</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na PC</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuSWITCH" #menuSWITCHTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuSWITCHTrigger)" (mouseleave)="buttonLeave(menuSWITCHTrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuSWITCH" #menuSWITCHTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuSWITCHTrigger)">
         <h4>SWITCH</h4>
       </button>
       <mat-menu #menuSWITCH="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuSWITCHTrigger, button)">
+        <div (mouseleave)="menuSWITCHTrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria SWITCH</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na SWITCH</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menu3DS" #menu3DSTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menu3DSTrigger)" (mouseleave)="buttonLeave(menu3DSTrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menu3DS" #menu3DSTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menu3DSTrigger)">
         <h4>3DS</h4>
       </button>
       <mat-menu #menu3DS="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menu3DSTrigger, button)">
+        <div (mouseleave)="menu3DSTrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria 3DS</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na 3DS</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuPS3" #menuPS3Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPS3Trigger)" (mouseleave)="buttonLeave(menuPS3Trigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuPS3" #menuPS3Trigger="matMenuTrigger" (mouseenter)="buttonFocus(menuPS3Trigger)">
         <h4>PS3/X360</h4>
       </button>
       <mat-menu #menuPS3="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuPS3Trigger, button)">
+        <div (mouseleave)="menuPS3Trigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria PS3/X360</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na PS3/X360</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuWII" #menuWIITrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuWIITrigger)" (mouseleave)="buttonLeave(menuWIITrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuWII" #menuWIITrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuWIITrigger)">
         <h4>WIIU/WII/DS</h4>
       </button>
       <mat-menu #menuWII="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuWIITrigger, button)">
+        <div (mouseleave)="menuWIITrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>Akcesoria WIIU/WII/DS</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>Gry na WIIU/WII/DS</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
     <li>
-      <button #button mat-button [matMenuTriggerFor]="menuUsed" #menuUsedTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuUsedTrigger)" (mouseleave)="buttonLeave(menuUsedTrigger, button)" style="z-index:1050">
+      <button class="Btn" #button mat-button [matMenuTriggerFor]="menuUsed" #menuUsedTrigger="matMenuTrigger" (mouseenter)="buttonFocus(menuUsedTrigger)">
         <h4>UŻYWANE</h4>
       </button>
       <mat-menu #menuUsed="matMenu" direction="down" yPosition="below">
-        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(menuUsedTrigger, button)">
+        <div (mouseleave)="menuUsedTrigger.closeMenu()">
           <div class="accessories" mat-menu-item>
             <h5>UŻYWANE Akcesoria</h5>
           </div>
           <div class="games" mat-menu-item>
             <h5>UŻYWANE Gry</h5>
           </div>
-        </span>
+        </div>
       </mat-menu>
     </li>
   </ol>
 </nav>
+<footer class="footer">
+  <div class="footer-info">
+    <div class="footer-info-subscribe">
+      <h4>Bądź zawsze na bieżąco</h4>
+      <div>
+        <input class="footer-info-subscribe-input" placeholder="Zapisz się na newsletter">
+        <button class="footer-info-subscribe-btn">
+          <p>></p>
+        </button>
+      </div>
+    </div>
+    <div class="footer-info-social">
+      <h4>Dołącz do nas</h4>
+      <div class="footer-info-social-icons">
+        <a>
+          <img class="footer-info-social-icon" src="../assets/img/facebook-f-brands.svg">
+        </a>
+        <a>
+          <img class="footer-info-social-icon" src="../assets/img/instagram-brands.svg">
+        </a>
+        <a>
+          <img class="footer-info-social-icon" src="../assets/img/twitter-brands.svg">
+        </a>
+        <a>
+          <img class="footer-info-social-icon" src="../assets/img/youtube-brands.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="footer-main">
+      <h2>ElectroShop</h2>
+      <div class="footer-main-components">
+        <a>
+          <h5 class="footer-main-text">O nas</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Kontakt i salony</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Kariera</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Biuro prasowe</h5>
+        </a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <h2>Zakupy</h2>
+      <div class="footer-main-components">
+        <a>
+          <h5 class="footer-main-text">Dostawa</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Ubezpieczenie sprzętu</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Śledzenie przesyłki</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Zwroty i reklamacje</h5>
+        </a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <h2>Informacje prawne</h2>
+      <div class="footer-main-components">
+        <a>
+          <h5 class="footer-main-text">Regulamin sklepu</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Polityka prywatności i cookies</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Koszty gospodarowania odpadami</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Materiały do pobrania</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Plan połączenia</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Polityka transparentności</h5>
+        </a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <h2>Twoje konto</h2>
+      <div class="footer-main-components">
+        <a>
+          <h5 class="footer-main-text">Twój koszyk</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Rejestracja</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Logowanie</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Edycja danych</h5>
+        </a>
+        <a>
+          <h5 class="footer-main-text">Twoje zamówienia</h5>
+        </a>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <h2>Masz pytania?</h2>
+      <div class="footer-contact-component">
+        <img class="footer-contact-component-img" src="../assets/img/envelope-solid.svg">
+        <div>
+          <h4>99 999 99 99</h4>
+          <h4>pon. - pt.: 8:00 - 21:00<br>sob. - nd.: 8:00 - 19:00</h4>
+        </div>
+      </div>
+      <div class="footer-contact-component">
+        <img class="footer-contact-component-img" src="../assets/img/phone-solid.svg">
+        <h4>ElectroShop@gmail.com</h4>
+      </div>
+    </div>
+  </div>
+</footer>
 <router-outlet></router-outlet>

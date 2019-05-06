@@ -1,5 +1,5 @@
 # ElectroShop - cookavsky
-**_Create first Shop used Angular with data, system login, buying. Everthing what is necessary to open webshop_**
+**_Create first Shop used Angular with data, system login, buying. Everthing what is necessary to open webshoping._**
 
 ## Table of contents
 * [Getting Started](#getting-started)

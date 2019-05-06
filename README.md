@@ -1,6 +1,34 @@
-# ElectroShop
+# ElectroShop - cookavsky
+**_Create first Shop used Angular with data, system login, buying. Everthing what is necessary to open webshop_**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+## Table of contents
+* [Getting Started](#getting-started)
+* [Acknowledgments](#acknowledgments)
+* [Technologies](#technologies)
+* [Features](#features)
+* [Development server](#development-server)
+* [Code scaffolding](#code-scaffolding)
+* [Build](#build)
+* [Running unit tests](#running-unit-tests)
+* [Running end-to-end tests](#running-end-to-end-tests)
+* [Status](#status)
+* [Author](#author)
+
+## Getting Started
+I want to create a fully automated website to buy.
+
+## Technologies
+* [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+
+## Features
+List of features ready and TODOs for future development:
+
+To-do list:
+* System login
+* Sytem buying
+* database
+* The Appearance (Home, Search, Individual element)
+* Cookies and all text
 
 ## Development server
 
@@ -22,7 +50,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Status
+In the process, until it finishes at 100%
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# ElectroShop
+## Author
+Created by **_cookavsky_** [Spotify Api](https://api.cookavsky.com/) - for friends Polska Panda.

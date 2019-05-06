@@ -54,4 +54,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 In the process, until it finishes at 100%
 
 ## Author
-Created by **_cookavsky_** [Spotify Api](https://api.cookavsky.com/) - for friends Polska Panda.
+Created by **_cookavsky_** - for friends Polska Panda.
